@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNAL 4.0 | MARVELOUS TECH EVENT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js"></script>
+</head>
+
+<body>
+    <!-- Background layers -->
+    <div class="action-bg"></div>
+    <div class="action-lines"></div>
+    <div class="halftone-overlay"></div>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#"><img src="sps.png" alt="SPS Logo" class="sps-logo"></a>
+            <nav>
+                <a href="#about" class="nav-tab active">About</a>
+                <a href="#gallery" class="nav-tab">Gallery</a>
+                <a href="#speakers" class="nav-tab">Speakers</a>
+                <a href="#programs" class="nav-tab">Programs</a>
+                <a href="#schedule" class="nav-tab">Schedule</a>
+                <a href="#register" class="nav-tab">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="main-logo-container">
+                    <img src="signallog.png" alt="SIGNAL 4.0" class="main-logo">
+                    <div
+                        style="position: absolute; bottom: -20px; right: 0; background: var(--primary-yellow); color: #000; padding: 10px; font-family: 'Luckiest Guy'; border: 3px solid #000; transform: rotate(5deg); font-size: 1.5rem;">
+                        FEB 20-22, 2026!
+                    </div>
+                </div>
+
+                <div class="comic-panel" id="about">
+                    <p style="font-size: 1.2rem; line-height: 1.6; font-weight: 700;">
+                        <strong>SIGNAL 4.0</strong>, the flagship event of the <strong>IEEE SPS Kerala Chapter</strong>,
+                        bursts onto the scene with more energy than a supernova! This fourth edition is your portal to a
+                        universe of technology, inspiration, and hero-level collaboration.
+                    </p>
+                    <a href="https://thepase.ceal.in" target="_blank" style="text-decoration: none;"><button
+                            class="pow-btn">REGISTER NOW!</button></a>
+                </div>
+
+                <div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
+                    <button class="action-label"
+                        style="background: var(--primary-blue); color: white; border: 3px solid #000; cursor: pointer; padding: 10px 20px;"
+                        onclick="openModal('spsModal')">ABOUT SPS KERALA</button>
+                    <button class="action-label"
+                        style="background: var(--primary-red); color: white; border: 3px solid #000; cursor: pointer; padding: 10px 20px;"
+                        onclick="openModal('hostModal')">EVENT HOST</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <div class="countdown-container">
+            <div class="countdown-box">
+                <span id="days" class="countdown-number">00</span>
+                <span class="countdown-label">DAYS</span>
+            </div>
+            <div class="countdown-box">
+                <span id="hours" class="countdown-number">00</span>
+                <span class="countdown-label">HRS</span>
+            </div>
+            <div class="countdown-box">
+                <span id="minutes" class="countdown-number">00</span>
+                <span class="countdown-label">MINS</span>
+            </div>
+            <div class="countdown-box">
+                <span id="seconds" class="countdown-number">00</span>
+                <span class="countdown-label">SECS</span>
+            </div>
+        </div>
+
+        <!-- Gallery Section -->
+        <section class="comic-panel" id="gallery" style="margin: 50px auto; background: #222; color: white;">
+            <h2 class="comic-text" style="font-size: 3rem; margin-bottom: 20px; color: var(--primary-yellow);">PAST
+                EVENT GALLERY</h2>
+            <div id="gallery-container"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                <!-- Dynamic Gallery Images Go Here -->
+            </div>
+        </section>
+
+
+
+        <section class="speakers-section" id="speakers">
+            <div class="container">
+                <h2 class="section-title">FEATURED HEROES</h2>
+                <div class="speakers-grid" id="speakers-container">
+                    <!-- Dynamic Speakers Go Here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="comic-panel" id="programs"
+            style="margin: 100px auto; transform: rotate(-1deg); background: var(--primary-blue); color: white;">
+            <h2 class="comic-text" style="font-size: 3rem; margin-bottom: 20px;">TOP SECRET MISSIONS</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left;">
+                <div
+                    style="background: rgba(255,255,255,0.1); padding: 15px; border-left: 10px solid var(--primary-yellow);">
+                    <h3 class="action-label">Workshop A</h3>
+                    <p>Master the arts of Signal Processing.</p>
+                </div>
+                <div
+                    style="background: rgba(255,255,255,0.1); padding: 15px; border-left: 10px solid var(--primary-red);">
+                    <h3 class="action-label">Hackathon</h3>
+                    <p>48 Hours of non-stop action!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="comic-panel" id="schedule" style="margin: 50px auto; background: var(--text-white);">
+            <h2 class="comic-text" style="font-size: 3rem; margin-bottom: 20px; color: var(--primary-red);">ACTION
+                SCHEDULE</h2>
+
+            <div class="schedule-tabs" style="display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap;">
+                <button class="action-label schedule-tab active" onclick="showSchedule('day1')">DAY 1: THE
+                    ORIGIN</button>
+                <button class="action-label schedule-tab" onclick="showSchedule('day2')">DAY 2: THE POWER UP</button>
+                <button class="action-label schedule-tab" onclick="showSchedule('day3')">DAY 3: THE SHOWDOWN</button>
+            </div>
+
+            <!-- Day 1 -->
+            <div id="day1" class="schedule-content active"
+                style="text-align: left; font-family: 'Inter'; font-weight: 700; color: #000;">
+                <div class="schedule-row"><span>01:00 PM - 02:30 PM</span><span>REGISTRATION STARTS</span></div>
+                <div class="schedule-row"><span>03:00 PM - 04:00 PM</span><span>PROGRAM INTRO / MD
+                        <small>(YP)</small></span></div>
+                <div class="schedule-row"><span>04:00 PM - 05:00 PM</span><span>SIT TALK SESSIONS & COMPETITIONS
+                        <br><small>Adil (LinkedIn), Bibin (PCB), AI Impact</small></span></div>
+                <div class="schedule-row"><span>05:00 PM - 06:30 PM</span><span>MURDER MYSTERY</span></div>
+                <div class="schedule-row"><span>06:30 PM - 08:00 PM</span><span>IFTHAR + DINNER</span></div>
+                <div class="schedule-row" style="border: none;"><span>08:00 PM - 09:30 PM</span><span>CULTURALS &
+                        CAMPFIRE</span></div>
+            </div>
+
+            <!-- Day 2 -->
+            <div id="day2" class="schedule-content"
+                style="display: none; text-align: left; font-family: 'Inter'; font-weight: 700; color: #000;">
+                <div class="schedule-row"><span>08:00 AM - 09:00 AM</span><span>BREAKFAST</span></div>
+                <div class="schedule-row"><span>09:15 AM - 11:00 AM</span><span>ICE BREAKING <small>(Vimal Jyothi SPS
+                            Team)</small></span></div>
+                <div class="schedule-row"><span>11:00 AM - 12:00 PM</span><span>INAUGURATION</span></div>
+                <div class="schedule-row"><span>12:00 PM - 12:15 PM</span><span>PHOTO SESSION</span></div>
+                <div class="schedule-row"><span>12:15 PM - 01:00 PM</span><span>LUNCH break</span></div>
+                <div class="schedule-row"><span>01:00 PM - 04:00 PM</span><span>TECHNICAL WORKSHOP - PART 1</span></div>
+                <div class="schedule-row"><span>04:00 PM - 04:15 PM</span><span>TEA - SNACKS</span></div>
+                <div class="schedule-row"><span>04:15 PM - 07:00 PM</span><span>TECHNICAL WORKSHOP - PART 2</span></div>
+                <div class="schedule-row"><span>06:30 PM - 08:30 PM</span><span>GALA DINNER</span></div>
+                <div class="schedule-row" style="border: none;"><span>08:30 PM - 09:30 PM</span><span>BAND
+                        PERFORMANCE</span></div>
+            </div>
+
+            <!-- Day 3 -->
+            <div id="day3" class="schedule-content"
+                style="display: none; text-align: left; font-family: 'Inter'; font-weight: 700; color: #000;">
+                <div class="schedule-row"><span>08:00 AM - 09:00 AM</span><span>BREAKFAST</span></div>
+                <div class="schedule-row"><span>09:00 AM - 12:00 PM</span><span>NON TECHNICAL SESSION "ANANDHAM"</span>
+                </div>
+                <div class="schedule-row"><span>12:00 PM - 01:00 PM</span><span>COMPETITION FINALS</span></div>
+                <div class="schedule-row"><span>01:00 PM - 02:00 PM</span><span>LUNCH break</span></div>
+                <div class="schedule-row"><span>02:00 PM - 03:00 PM</span><span>CLOSING CEREMONY</span></div>
+                <div class="schedule-row" style="border: none;"><span>03:00 PM - 03:30 PM</span><span>FINAL PHOTO
+                        SESSION</span></div>
+            </div>
+        </section>
+
+        <section class="hero" id="register">
+            <div class="comic-panel" style="background: var(--primary-yellow); transform: rotate(2deg); padding: 60px;">
+                <h2 class="action-label" style="font-size: 4rem; margin-bottom: 20px; color: #000;">READY FOR
+                    ACTION?
+                </h2>
+                <p style="font-weight: 900; font-size: 1.5rem; margin-bottom: 30px; color: #000;">THE WORLD NEEDS
+                    HEROES
+                    LIKE YOU!</p>
+                <a href="https://thepase.ceal.in" target="_blank" class="pow-btn"
+                    style="text-decoration: none; display: inline-block;">REGISTER NOW!</a>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: #000; padding: 50px 0; border-top: 10px solid var(--primary-red); text-align: center;">
+        <img src="sps.png" alt="SPS" style="height: 40px; margin-bottom: 20px;">
+        <p style="color: #666; font-weight: bold;">© 2026 IEEE SPS KERALA CHAPTER. REGISTER NOW BEFORE IT'S TOO LATE!
+        </p>
+        <div style="margin-top: 20px;">
+            <a href="https://www.ieeespskc.in/" target="_blank"
+                style="color: var(--primary-yellow); margin: 0 10px; font-family: 'Luckiest Guy'; text-decoration: none;">SPS
+                KERALA</a>
+            <a href="https://www.ieeesbtkmce.in/" target="_blank"
+                style="color: var(--primary-blue); margin: 0 10px; font-family: 'Luckiest Guy'; text-decoration: none;">TKMCE
+                SBT</a>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="spsModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('spsModal')">&times;</span>
+            <h2 class="modal-title">IEEE SPS KERALA</h2>
+            <div class="modal-body">
+                The IEEE Signal Processing Society Kerala Chapter is a vibrant community of professionals and students
+                dedicated to the advancement of signal processing.
+            </div>
+            <a href="https://www.ieeespskc.in/" target="_blank" class="pow-btn"
+                style="text-decoration: none; display: block; text-align: center;">VISIT WEBSITE</a>
+        </div>
+    </div>
+
+    <div id="hostModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('hostModal')">&times;</span>
+            <h2 class="modal-title">EVENT HOST: TKMCE</h2>
+            <div class="modal-body">
+                TKM College of Engineering, Kollam, is the first government-aided engineering college in Kerala, known
+                for its excellence in technical education.
+            </div>
+            <a href="https://www.ieeesbtkmce.in/" target="_blank" class="pow-btn"
+                style="text-decoration: none; display: block; text-align: center;">VISIT COLLEGE SITE</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Render Speakers from data.js
+            const speakersContainer = document.getElementById('speakers-container');
+            if (typeof SPEAKERS !== 'undefined') {
+                speakersContainer.innerHTML = SPEAKERS.map((s, i) => `
+                    <div class="speaker-card" style="transform: rotate(${i % 2 === 0 ? '1' : '-2'}deg); opacity: 1; margin: 10px;">
+                        <div class="speaker-img-wrapper">
+                            <img src="speakers/${s.image}" alt="${s.name}" onerror="this.src='https://via.placeholder.com/200?text=Hero'">
+                        </div>
+                        <h3 class="speaker-name">${s.name}</h3>
+                        <p class="speaker-role">${s.role}</p>
+                        <div style="margin-top: 15px;">
+                            ${s.linkedin && s.linkedin !== '#' ? `<a href="${s.linkedin}" target="_blank" class="action-label" style="color: var(--primary-blue); text-decoration: none; border: 2px solid #000; padding: 5px 10px; background: white;">LINKEDIN</a>` : ''}
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // Render Gallery from data.js
+            const galleryContainer = document.getElementById('gallery-container');
+            if (typeof GALLERY_FILES !== 'undefined') {
+                galleryContainer.innerHTML = GALLERY_FILES.map((filename, i) => `
+                    <div style="aspect-ratio: 1; background: #444; border: 3px solid #000; transition: transform 0.3s; overflow: hidden;" 
+                         onmouseover="this.style.transform='scale(1.1) rotate(${i % 2 === 0 ? '2' : '-2'}deg)'" 
+                         onmouseout="this.style.transform='scale(1) rotate(0)'">
+                         <img src="gallery/${filename}" alt="Gallery ${i}" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;" onerror="this.src='https://via.placeholder.com/300?text=Gallery+Item'">
+                    </div>
+                `).join('');
+            }
+        });
+
+        // Simple tab switching visual
+        const tabs = document.querySelectorAll('.nav-tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+            });
+        });
+
+        // Intersection Observer for Comic Panel reveal
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.comic-panel').forEach(panel => {
+            observer.observe(panel);
+        });
+        // Countdown Logic
+        const targetDate = new Date("February 22, 2026 00:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.querySelector(".countdown-container").innerHTML = "<h2 class='comic-text'>MISSION STARTED!</h2>";
+            }
+        }
+
+        const countdownInterval = setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Modal Logic
+        function openModal(id) {
+            const modal = document.getElementById(id);
+            modal.style.display = 'flex';
+            setTimeout(() => modal.classList.add('modal-active'), 10);
+        }
+
+        function closeModal(id) {
+            const modal = document.getElementById(id);
+            modal.classList.remove('modal-active');
+            setTimeout(() => modal.style.display = 'none', 400);
+        }
+
+        // Schedule Tab Logic
+        function showSchedule(dayId) {
+            // Hide all contents
+            document.querySelectorAll('.schedule-content').forEach(el => el.style.display = 'none');
+            // Remove active class from buttons
+            document.querySelectorAll('.schedule-tab').forEach(btn => btn.classList.remove('active'));
+
+            // Show target
+            document.getElementById(dayId).style.display = 'block';
+            // Add active class to clicked button
+            event.currentTarget.classList.add('active');
+        }
+
+        // Close on overlay click
+        window.onclick = function (event) {
+            if (event.target.classList.contains('modal-overlay')) {
+                const modal = event.target;
+                modal.classList.remove('modal-active');
+                setTimeout(() => modal.style.display = 'none', 400);
+            }
+        }
+    </script>
+</body>
+
+</html>

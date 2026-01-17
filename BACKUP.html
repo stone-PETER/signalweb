@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNAL 4.0 | MARVELOUS TECH EVENT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js"></script>
+</head>
+
+<body>
+    <!-- Background layers -->
+    <div class="action-bg"></div>
+    <div class="action-lines"></div>
+    <div class="halftone-overlay"></div>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#"><img src="sps.png" alt="SPS Logo" class="sps-logo"></a>
+            <nav>
+                <a href="#about" class="nav-tab active">About</a>
+                <a href="#speakers" class="nav-tab">Speakers</a>
+                <a href="#programs" class="nav-tab">Programs</a>
+                <a href="#schedule" class="nav-tab">Schedule</a>
+                <a href="#gallery" class="nav-tab">Gallery</a>
+                <a href="#register" class="nav-tab">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="main-logo-container">
+                    <img src="signallog.png" alt="SIGNAL 4.0" class="main-logo">
+                    <div
+                        style="position: absolute; bottom: -20px; right: 0; background: var(--primary-yellow); color: #000; padding: 10px; font-family: 'Luckiest Guy'; border: 3px solid #000; transform: rotate(5deg); font-size: 1.5rem;">
+                        FEB 20-22, 2026!
+                    </div>
+                </div>
+
+                <div class="comic-panel" id="about">
+                    <p style="font-size: 1.2rem; line-height: 1.6; font-weight: 700;">
+                        <strong>SIGNAL 4.0</strong>, the flagship event of the <strong>IEEE SPS Kerala Chapter</strong>,
+                        bursts onto the scene with more energy than a supernova! This fourth edition is your portal to a
+                        universe of technology, inspiration, and hero-level collaboration.
+                    </p>
+                    <button class="pow-btn">REGISTER NOW!</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="speakers-section" id="speakers">
+            <div class="container">
+                <h2 class="section-title">FEATURED HEROES</h2>
+                <div class="speakers-grid" id="speakers-container">
+                    <!-- Dynamic Speakers Go Here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="comic-panel" id="programs"
+            style="margin: 100px auto; transform: rotate(-1deg); background: var(--primary-blue); color: white;">
+            <h2 class="comic-text" style="font-size: 3rem; margin-bottom: 20px;">TOP SECRET MISSIONS</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left;">
+                <div
+                    style="background: rgba(255,255,255,0.1); padding: 15px; border-left: 10px solid var(--primary-yellow);">
+                    <h3 class="action-label">Workshop A</h3>
+                    <p>Master the arts of Signal Processing.</p>
+                </div>
+                <div
+                    style="background: rgba(255,255,255,0.1); padding: 15px; border-left: 10px solid var(--primary-red);">
+                    <h3 class="action-label">Hackathon</h3>
+                    <p>48 Hours of non-stop action!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="comic-panel" id="schedule" style="margin: 50px auto; background: var(--text-white);">
+            <h2 class="comic-text" style="font-size: 3rem; margin-bottom: 20px; color: var(--primary-red);">ACTION
+                SCHEDULE</h2>
+            <div style="text-align: left; font-family: 'Inter'; font-weight: 700; color: #000;">
+                <div track-reveal
+                    style="border-bottom: 2px solid #000; padding: 10px 0; display: flex; justify-content: space-between;">
+                    <span>DAY 1: THE ORIGIN STORY</span>
+                    <span style="color: var(--primary-blue);">10:00 AM</span>
+                </div>
+                <div track-reveal
+                    style="border-bottom: 2px solid #000; padding: 10px 0; display: flex; justify-content: space-between;">
+                    <span>DAY 2: THE POWER UP</span>
+                    <span style="color: var(--primary-blue);">09:00 AM</span>
+                </div>
+                <div track-reveal style="padding: 10px 0; display: flex; justify-content: space-between;">
+                    <span>DAY 3: THE FINAL SHOWDOWN</span>
+                    <span style="color: var(--primary-blue);">11:00 AM</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="comic-panel" id="gallery" style="margin: 50px auto; background: #222; color: white;">
+            <h2 class="comic-text" style="font-size: 3rem; margin-bottom: 20px; color: var(--primary-yellow);">PAST
+                EVENT GALLERY</h2>
+            <div id="gallery-container"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                <!-- Dynamic Gallery Images Go Here -->
+            </div>
+        </section>
+
+        <section class="hero" id="register">
+            <div class="comic-panel" style="background: var(--primary-yellow); transform: rotate(2deg); padding: 60px;">
+                <h2 class="action-label" style="font-size: 4rem; margin-bottom: 20px; color: #000;">READY FOR ACTION?
+                </h2>
+                <p style="font-weight: 900; font-size: 1.5rem; margin-bottom: 30px; color: #000;">THE WORLD NEEDS HEROES
+                    LIKE YOU!</p>
+                <a href="#" class="pow-btn" style="text-decoration: none; display: inline-block;">REGISTER NOW!</a>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: #000; padding: 50px 0; border-top: 10px solid var(--primary-red); text-align: center;">
+        <img src="sps.png" alt="SPS" style="height: 40px; margin-bottom: 20px;">
+        <p style="color: #666; font-weight: bold;">© 2026 IEEE SPS KERALA CHAPTER. REGISTER NOW BEFORE IT'S TOO LATE!
+        </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Render Speakers from data.js
+            const speakersContainer = document.getElementById('speakers-container');
+            if (typeof SPEAKER_FILES !== 'undefined') {
+                speakersContainer.innerHTML = SPEAKER_FILES.map((filename, i) => `
+                    <div class="speaker-card" style="transform: rotate(${i % 2 === 0 ? '1' : '-2'}deg); opacity: 1; margin: 10px;">
+                        <div class="speaker-img-wrapper">
+                            <img src="speakers/${filename}" alt="${formatName(filename)}" onerror="this.src='https://via.placeholder.com/200?text=Hero'">
+                        </div>
+                        <h3 class="speaker-name">${formatName(filename)}</h3>
+                        <p class="speaker-role">SPEAKER</p>
+                    </div>
+                `).join('');
+            }
+
+            // Render Gallery from data.js
+            const galleryContainer = document.getElementById('gallery-container');
+            if (typeof GALLERY_FILES !== 'undefined') {
+                galleryContainer.innerHTML = GALLERY_FILES.map((filename, i) => `
+                    <div style="aspect-ratio: 1; background: #444; border: 3px solid #000; transition: transform 0.3s; overflow: hidden;" 
+                         onmouseover="this.style.transform='scale(1.1) rotate(${i % 2 === 0 ? '2' : '-2'}deg)'" 
+                         onmouseout="this.style.transform='scale(1) rotate(0)'">
+                         <img src="gallery/${filename}" alt="Gallery ${i}" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;" onerror="this.src='https://via.placeholder.com/300?text=Gallery+Item'">
+                    </div>
+                `).join('');
+            }
+        });
+
+        // Simple tab switching visual
+        const tabs = document.querySelectorAll('.nav-tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+            });
+        });
+
+        // Intersection Observer for Comic Panel reveal
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.comic-panel').forEach(panel => {
+            observer.observe(panel);
+        });
+    </script>
+</body>
+
+</html>
