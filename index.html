@@ -240,7 +240,7 @@
                 speakersContainer.innerHTML = SPEAKERS.map((s, i) => `
                     <div class="speaker-card" style="transform: rotate(${i % 2 === 0 ? '1' : '-2'}deg); opacity: 1; margin: 10px;">
                         <div class="speaker-img-wrapper">
-                            <img src="speakers/${s.image}" alt="${s.name}" onerror="this.src='/placeholder.jpg'">
+                            <img src="speakers/${s.image}" alt="${s.name}" onerror="this.src='/placeholder copy.jpg'">
                         </div>
                         <h3 class="speaker-name">${s.name}</h3>
                         <p class="speaker-role">${s.role}</p>
