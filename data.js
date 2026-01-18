@@ -10,7 +10,7 @@
 const SPEAKERS = [
     {
         "name": "Pranav S",
-        "image": "Pranav_S.png",
+        "image": "silhouette.png",
         "role": "Speaker",
         "bio": "",
         "linkedin": "#"
