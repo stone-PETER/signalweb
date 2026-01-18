@@ -495,3 +495,94 @@ nav {
         gap: 5px;
     }
 }
+
+/* Gallery Marquee & Bubble Animation */
+.gallery-marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background: #111;
+    padding: 60px 0;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    position: relative;
+    cursor: grab;
+}
+
+.gallery-track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: marquee-scroll 40s linear infinite;
+}
+
+.gallery-track:hover {
+    animation-play-state: paused;
+}
+
+.comic-bubble-item {
+    width: 250px;
+    height: 250px;
+    border: 4px solid #000;
+    background: #fff;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.5);
+    /* Comic Bubble Shape */
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: bubble-float 4s ease-in-out infinite;
+}
+
+.comic-bubble-item:nth-child(even) {
+    border-radius: 40% 60% 40% 60% / 50% 50% 50% 50%;
+    animation-duration: 5s;
+    animation-delay: -1s;
+}
+
+.comic-bubble-item:nth-child(3n) {
+    border-radius: 60% 40% 60% 40% / 40% 60% 40% 60%;
+    animation-duration: 6s;
+    animation-delay: -2s;
+}
+
+.comic-bubble-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    filter: grayscale(0.2) contrast(1.1);
+    transition: filter 0.3s;
+}
+
+.comic-bubble-item:hover {
+    transform: scale(1.1) rotate(2deg) translateY(-10px);
+    box-shadow: 12px 12px 0 var(--primary-yellow);
+    z-index: 10;
+}
+
+.comic-bubble-item:hover img {
+    filter: grayscale(0) contrast(1.2);
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes bubble-float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(1deg);
+    }
+}

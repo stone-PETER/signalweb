@@ -9,12 +9,12 @@
 
 const SPEAKERS = [
     {
-  "name": "Pranav s",
-  "image": "Pranav_S.png",
-  "role": "pas1",
-  "bio": "pase2",
-  "linkedin": "pase3"
-},
+        "name": "Pranav s",
+        "image": "Pranav_S.png",
+        "role": "pas1",
+        "bio": "pase2",
+        "linkedin": "pase3"
+    },
     {
         "name": "Dr. Tech Wiz",
         "image": "Dr_Tech_Wiz.png",
@@ -39,10 +39,24 @@ const SPEAKERS = [
 ];
 
 const GALLERY_FILES = [
-    "event1.png",
-    "event2.png",
-    "img1.png",
-    "img2.png",
-    "img3.png",
-    "img4.png"
+    "WhatsApp Image 2026-01-18 at 11.08.23 AM.jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.24 AM.jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.25 AM.jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.26 AM.jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.27 AM.jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.28 AM (1).jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.28 AM.jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.29 AM.jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.30 AM.jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.32 AM.jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.33 AM.jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.34 AM (1).jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.34 AM.jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.35 AM.jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.37 AM.jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.38 AM.jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.40 AM.jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.42 AM.jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.43 AM (1).jpeg",
+    "WhatsApp Image 2026-01-18 at 11.08.43 AM.jpeg"
 ];

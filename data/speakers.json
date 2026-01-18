@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Tech Wiz",
+    "role": "AI SUPERHERO",
+    "image": "speaker1.png",
+    "bio": "Expert in neural networks and saving the world with code.",
+    "linkedin": "https://linkedin.com/in/techwiz"
+  },
+  {
+    "id": 2,
+    "name": "Prof. Signal",
+    "role": "DSP GUARDIAN",
+    "image": "speaker2.png",
+    "bio": "Protecting the spectrum one frequency at a time.",
+    "linkedin": "https://linkedin.com/in/profsignal"
+  }
+]

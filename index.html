@@ -82,15 +82,14 @@
         </div>
 
         <!-- Gallery Section -->
-        <section class="comic-panel" id="gallery" style="margin: 50px auto; background: #222; color: white;">
-            <h2 class="comic-text" style="font-size: 3rem; margin-bottom: 20px; color: var(--primary-yellow);">PAST
-                EVENT GALLERY</h2>
-            <div id="gallery-container"
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
-                <!-- Dynamic Gallery Images Go Here -->
+        <section id="gallery" style="margin: 80px 0; background: #000; text-align: center;">
+            <h2 class="section-title" style="margin-bottom: 40px; color: var(--primary-yellow);">PAST EVENT GALLERY</h2>
+            <div class="gallery-marquee-container">
+                <div id="gallery-track" class="gallery-track">
+                    <!-- Dynamic Gallery Bubbles Go Here -->
+                </div>
             </div>
         </section>
-
 
 
         <section class="speakers-section" id="speakers">
@@ -249,16 +248,16 @@
                 `).join('');
             }
 
-            // Render Gallery from data.js
-            const galleryContainer = document.getElementById('gallery-container');
+            // Render Gallery Marquee from data.js
+            const galleryTrack = document.getElementById('gallery-track');
             if (typeof GALLERY_FILES !== 'undefined') {
-                galleryContainer.innerHTML = GALLERY_FILES.map((filename, i) => `
-                    <div style="aspect-ratio: 1; background: #444; border: 3px solid #000; transition: transform 0.3s; overflow: hidden;" 
-                         onmouseover="this.style.transform='scale(1.1) rotate(${i % 2 === 0 ? '2' : '-2'}deg)'" 
-                         onmouseout="this.style.transform='scale(1) rotate(0)'">
-                         <img src="gallery/${filename}" alt="Gallery ${i}" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;" onerror="this.src='https://via.placeholder.com/300?text=Gallery+Item'">
+                // Double the files for seamless marquee
+                const filesFormatted = [...GALLERY_FILES, ...GALLERY_FILES].map((filename, i) => `
+                    <div class="comic-bubble-item">
+                         <img src="gallery/${filename}" alt="Gallery ${i}" onerror="this.src='https://via.placeholder.com/300?text=Gallery+Item'">
                     </div>
                 `).join('');
+                galleryTrack.innerHTML = filesFormatted;
             }
         });
 
