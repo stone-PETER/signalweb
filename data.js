@@ -17,21 +17,21 @@ const SPEAKERS = [
     },
     {
         "name": "Dr. Tech Wiz",
-        "image": "Dr_Tech_Wiz.png",
+        "image": "lead.jpeg",
         "role": "AI SUPERHERO",
         "bio": "Expert in neural networks and saving the world with code.",
         "linkedin": "https://linkedin.com/in/techwiz"
     },
     {
         "name": "Prof. Signal",
-        "image": "Prof_Signal.png",
+        "image": "lead.jpeg",
         "role": "DSP GUARDIAN",
         "bio": "Protecting the spectrum one frequency at a time.",
         "linkedin": "https://linkedin.com/in/profsignal"
     },
     {
         "name": "Captain Code",
-        "image": "Captain_Code.png",
+        "image": "lead.jpeg",
         "role": "CYBER SENTINEL",
         "bio": "Guardian of the binary realm.",
         "linkedin": "#"
