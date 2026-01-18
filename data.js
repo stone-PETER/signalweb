@@ -9,31 +9,31 @@
 
 const SPEAKERS = [
     {
-        "name": "Pranav s",
+        "name": "Pranav S",
         "image": "Pranav_S.png",
-        "role": "pas1",
-        "bio": "pase2",
-        "linkedin": "pase3"
+        "role": "Speaker",
+        "bio": "",
+        "linkedin": "#"
     },
     {
-        "name": "Dr. Tech Wiz",
-        "image": "lead.jpeg",
-        "role": "AI SUPERHERO",
-        "bio": "Expert in neural networks and saving the world with code.",
-        "linkedin": "https://linkedin.com/in/techwiz"
+        "name": "Hero #2",
+        "image": "silhouette.png",
+        "role": "REVEALING SOON",
+        "bio": "A mysterious hero joins the signal!",
+        "linkedin": "#"
     },
     {
-        "name": "Prof. Signal",
-        "image": "lead.jpeg",
-        "role": "DSP GUARDIAN",
-        "bio": "Protecting the spectrum one frequency at a time.",
-        "linkedin": "https://linkedin.com/in/profsignal"
+        "name": "Hero #3",
+        "image": "silhouette.png",
+        "role": "REVEALING SOON",
+        "bio": "The power is growing...",
+        "linkedin": "#"
     },
     {
-        "name": "Captain Code",
-        "image": "lead.jpeg",
-        "role": "CYBER SENTINEL",
-        "bio": "Guardian of the binary realm.",
+        "name": "Hero #4",
+        "image": "silhouette.png",
+        "role": "REVEALING SOON",
+        "bio": "Final recruitment in progress.",
         "linkedin": "#"
     }
 ];

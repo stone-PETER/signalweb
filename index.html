@@ -104,7 +104,7 @@
             </div>
         </section>
 
-        <section class="comic-panel" id="programs"
+        <!-- <section class="comic-panel" id="programs"
             style="margin: 100px auto; transform: rotate(-1deg); background: var(--primary-blue); color: white;">
             <h2 class="comic-text" style="font-size: 3rem; margin-bottom: 20px;">TOP SECRET MISSIONS</h2>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left;">
@@ -119,7 +119,7 @@
                     <p>48 Hours of non-stop action!</p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="comic-panel" id="schedule" style="margin: 50px auto; background: var(--text-white);">
             <h2 class="comic-text" style="font-size: 3rem; margin-bottom: 20px; color: var(--primary-red);">ACTION
@@ -240,7 +240,7 @@
                 speakersContainer.innerHTML = SPEAKERS.map((s, i) => `
                     <div class="speaker-card" style="transform: rotate(${i % 2 === 0 ? '1' : '-2'}deg); opacity: 1; margin: 10px;">
                         <div class="speaker-img-wrapper">
-                            <img src="speakers/${s.image}" alt="${s.name}">
+                            <img src="speakers/${s.image}" alt="${s.name}" onerror="this.src='speakers/silhouette.png'">
                         </div>
                         <h3 class="speaker-name">${s.name}</h3>
                         <p class="speaker-role">${s.role}</p>
@@ -257,7 +257,7 @@
                 // Double the files for seamless marquee
                 const filesFormatted = [...GALLERY_FILES, ...GALLERY_FILES].map((filename, i) => `
                     <div class="comic-bubble-item">
-                         <img src="gallery/${filename}" alt="Gallery ${i}" onerror="this.src='https://via.placeholder.com/300?text=Gallery+Item'">
+                          <img src="gallery/${filename}" alt="Gallery ${i}" onerror="this.parentElement.style.display='none'">
                     </div>
                 `).join('');
                 galleryTrack.innerHTML = filesFormatted;
