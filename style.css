@@ -127,7 +127,7 @@ header {
 
 .sps-logo {
     height: 60px;
-    
+
 }
 
 nav {
@@ -609,4 +609,92 @@ nav {
     50% {
         transform: translateY(-15px) rotate(1deg);
     }
+}
+
+/* Footer Enhancement */
+footer {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Social Links Enhancement */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 10;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-blue);
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 3px solid #000;
+}
+
+.social-icon:hover {
+    transform: scale(1.2) rotate(10deg);
+    background: var(--primary-yellow);
+    color: #000;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.footer-link-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-link-group a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1rem;
+    transition: all 0.2s;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.footer-link-group a:hover {
+    color: var(--primary-yellow);
+    border: 1px solid var(--primary-yellow);
+    transform: translateY(-3px);
+}
+
+.footer-container {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-char-bg {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 100%;
+    background: url('footer_bg.png') no-repeat bottom center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 1;
+    pointer-events: none;
+    filter: brightness(0.7);
 }
