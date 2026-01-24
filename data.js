@@ -9,7 +9,7 @@
 
 const DEFAULT_SPEAKERS = [
   {
-    name: "Pranav S",
+    name: "Hero #1",
     image: "PASE.png",
     role: "Speaker",
     bio: "",
