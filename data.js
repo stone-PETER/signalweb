@@ -9,32 +9,32 @@
 
 const DEFAULT_SPEAKERS = [
   {
-    name: "Hero #1",
-    image: "PASE.png",
-    role: "Speaker",
-    bio: "",
+    name: "Ajesh J S",
+    image: "Ajesh.jpeg",
+    role: "Chief Technical Officer at ELXTRON LABS LLP",
+    bio: "Expert in technical innovation and leadership",
+    linkedin: "https://www.linkedin.com/in/ajesh-j-s-ajs",
+  },
+  {
+    name: "Sanjay Johny",
+    image: "Sanjay.jpeg",
+    role: "Perception Systems Designer at Swapp Design",
+    bio: "Industry expert and technology leader",
+    linkedin: "https://www.linkedin.com/in/sanjay-johny",
+  },
+  {
+    name: "Dr. ANZAR S. M.",
+    image: "Ansar.jpeg",
+    role: "Assistant Professor, Department of ECE",
+    bio: "T. K. M. College of Engineering",
     linkedin: "#",
   },
   {
-    name: "Hero #2",
-    image: "PASE.png",
-    role: "REVEALING SOON",
-    bio: "A mysterious hero joins the signal!",
-    linkedin: "#",
-  },
-  {
-    name: "Hero #3",
-    image: "PASE.png",
-    role: "REVEALING SOON",
-    bio: "The power is growing...",
-    linkedin: "#",
-  },
-  {
-    name: "Hero #4",
-    image: "PASE.png",
-    role: "REVEALING SOON",
-    bio: "Final recruitment in progress.",
-    linkedin: "#",
+    name: "Asif Saif",
+    image: "Asif.jpeg",
+    role: "Co-founder, ELXTRON LABS",
+    bio: "Technology entrepreneur and innovation leader",
+    linkedin: "https://www.linkedin.com/in/asif-saif-764aa42a4",
   },
 ];
 
