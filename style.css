@@ -239,6 +239,20 @@ nav {
   transform: rotate(1deg);
 }
 
+.comic-panel::before {
+  content: "SIGNAL 4.0";
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  background: var(--primary-red);
+  color: white;
+  font-family: "Bangers", cursive;
+  padding: 5px 20px;
+  border: 3px solid #000;
+  transform: rotate(-3deg);
+  font-size: 1.5rem;
+}
+
 .comic-panel img {
   width: 100%;
   max-width: 100%;
@@ -248,9 +262,7 @@ nav {
   border: 3px solid #000;
   box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.3);
 }
-.hackathon{
-  height: 150px;
-}
+
 /* Speakers Section */
 .speakers-section {
   padding: 80px 0;
@@ -793,6 +805,13 @@ footer {
     width: calc(100% - 40px);
   }
 
+  .comic-panel::before {
+    font-size: 1rem;
+    top: -15px;
+    left: 10px;
+    padding: 3px 15px;
+  }
+
   .speakers-grid {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -847,20 +866,6 @@ footer {
     width: 90%;
     padding: 20px;
   }
-
-  #programs > div {
-    grid-template-columns: 1fr !important;
-    gap: 15px !important;
-  }
-
-  #programs > div > div {
-    padding: 12px !important;
-    min-height: auto;
-  }
-
-  #programs h2 {
-    font-size: 2rem !important;
-  }
 }
 
 @media (max-width: 480px) {
@@ -886,18 +891,5 @@ footer {
 
   nav {
     width: 85%;
-  }
-
-  #programs > div > div img {
-    max-height: 100px;
-    object-fit: cover;
-  }
-
-  #programs > div > div h3 {
-    font-size: 1rem !important;
-  }
-
-  #programs > div > div p {
-    font-size: 0.9rem;
   }
 }
