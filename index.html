@@ -193,175 +193,64 @@
         </div>
       </section>
 
-      
-
-      <section
+      <!-- <section
         class="comic-panel"
-        id="schedule"
-        style="margin: 50px auto; background: var(--text-white)"
+        id="programs"
+        style="
+          margin: 100px auto;
+          transform: rotate(-1deg);
+          background: var(--primary-blue);
+          color: white;
+        "
       >
-        <h2
-          class="comic-text"
-          style="
-            font-size: 3rem;
-            margin-bottom: 20px;
-            color: var(--primary-red);
-          "
-        >
-          ACTION SCHEDULE
+        <h2 class="comic-text" style="font-size: 3rem; margin-bottom: 20px;">
+          TOP SECRET MISSIONS
         </h2>
-
         <div
-          class="schedule-tabs"
-          style="display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap"
-        >
-          <button
-            class="action-label schedule-tab active"
-            onclick="showSchedule('day1')"
-          >
-            DAY 1: THE ORIGIN
-          </button>
-          <button
-            class="action-label schedule-tab"
-            onclick="showSchedule('day2')"
-          >
-            DAY 2: THE POWER UP
-          </button>
-          <button
-            class="action-label schedule-tab"
-            onclick="showSchedule('day3')"
-          >
-            DAY 3: THE SHOWDOWN
-          </button>
-        </div>
-
-        
-        <div
-          id="day1"
-          class="schedule-content active"
           style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
             text-align: left;
-            font-family: &quot;Inter&quot;;
-            font-weight: 700;
-            color: #000;
           "
         >
-          <div class="schedule-row">
-            <span>01:00 PM - 02:30 PM</span><span>REGISTRATION</span>
-          </div>
-          <div class="schedule-row">
-            <span>03:00 PM - 04:00 PM</span
-            ><span>PROGRAM INTRODUCTION</span>
-          </div>
-          <div class="schedule-row">
-            <span>04:00 PM - 05:00 PM</span
-            ><span
-              >PARALLEL TALK SESSIONS <br /><small
-                >AI Session, Women Empowerment, SLT Interactive Talk</small
-              ></span
-            >
-          </div>
-          <div class="schedule-row">
-            <span>05:00 PM - 06:30 PM</span><span>MURDER MYSTERY</span>
-          </div>
-          <div class="schedule-row">
-            <span>06:30 PM - 08:00 PM</span><span>IFTAR PARTY</span>
-          </div>
-          <div class="schedule-row" style="border: none">
-            <span>08:00 PM - 09:30 PM</span><span>TKM CULTURALS</span>
-          </div>
-        </div>
-
-        
-        <div
-          id="day2"
-          class="schedule-content"
-          style="
-            display: none;
-            text-align: left;
-            font-family: &quot;Inter&quot;;
-            font-weight: 700;
-            color: #000;
-          "
-        >
-          <div class="schedule-row">
-            <span>08:00 AM - 09:00 AM</span><span>BREAKFAST</span>
-          </div>
-          <div class="schedule-row">
-            <span>09:00 AM - 11:30 AM</span
-            ><span>TECHNICAL WORKSHOPS - PHASE I</span>
-          </div>
-          <div class="schedule-row">
-            <span>11:30 AM - 12:30 PM</span><span>INAUGURATION</span>
-          </div>
-          <div class="schedule-row">
-            <span>12:45 PM - 01:30 PM</span><span>LUNCH</span>
-          </div>
-          <div class="schedule-row">
-            <span>01:30 PM - 05:00 PM</span
-            ><span>TECHNICAL WORKSHOP - PHASE II</span>
-          </div>
-          <div class="schedule-row">
-            <span>05:00 PM - 05:15 PM</span><span>DRONE EXPO</span>
-          </div>
-          <div class="schedule-row">
-            <span>05:15 PM - 07:00 PM</span
-            ><span>ICE OFF</span>
-          </div>
-          <div class="schedule-row">
-            <span>07:00 PM - 08:30 PM</span><span>GALA DINNER</span>
-          </div>
-          <div class="schedule-row" style="border: none">
-            <span>08:30 PM - 09:30 PM</span><span>CULTURAL BAND</span>
-          </div>
-        </div>
-
-        
-        <div
-          id="day3"
-          class="schedule-content"
-          style="
-            display: none;
-            text-align: left;
-            font-family: &quot;Inter&quot;;
-            font-weight: 700;
-            color: #000;
-          "
-        >
-          <div class="schedule-row">
-            <span>08:00 AM - 09:00 AM</span><span>BREAKFAST</span>
-          </div>
-          <div class="schedule-row">
-            <span>09:00 AM - 12:00 PM</span
-            ><span>ANANDHAM</span>
-          </div>
-          <div class="schedule-row">
-            <span>01:00 PM - 02:00 PM</span><span>LUNCH</span>
-          </div>
-          <div class="schedule-row">
-            <span>02:00 PM - 03:00 PM</span><span>CLOSING CEREMONY</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Pricing Section -->
-      <section id="pricing" style="margin: 80px 0; position: relative">
-        <div class="container">
-          <h2
-            class="section-title"
-            style="
-              color: var(--primary-yellow);
-              text-align: center;
-              margin-bottom: 50px;
-            "
-          >
-            REGISTRATION PRICE TIERS
-          </h2>
-
           <div
             style="
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+              background: rgba(255, 255, 255, 0.1);
+              padding: 15px;
+              border-left: 10px solid var(--primary-yellow);
+            "
+          >
+            <h3 class="action-label">Workshop A</h3>
+            <img src="speakers/59048.jpg" alt="Computer Vision" />
+            <p>Introduction to Computer Vision</p>
+          </div>
+          <div
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              padding: 15px;
+              border-left: 10px solid var(--primary-yellow);
+            "
+          >
+            <h3 class="action-label">Workshop A</h3>
+            <img src="speakers/59048.jpg" alt="Computer Vision" />
+            <p>Introduction to Computer Vision</p>
+          </div>
+          <div
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              padding: 15px;
+              border-left: 10px solid var(--primary-red);
+            "
+          >
+            <h3 class="action-label">Hackathon</h3>
+            <p>48 Hours of non-stop action!</p>
+          </div>
+        </div>
+      </section> -->
+
+       <section
+        class="comic-panel"
               gap: 30px;
               max-width: 1200px;
               margin: 0 auto;
@@ -656,6 +545,186 @@
                 ">
                   Explore the future of unmanned aerial vehicles and drone technology. 
                   Hands-on experience with cutting-edge drone systems and applications.
+                </p>
+              </div>
+            </div>
+
+            <!-- Workshop panel: placeholder content (to be updated) -->
+            <div
+              class="comic-panel"
+              style="
+                background: var(--primary-yellow);
+                color: #000;
+                padding: 0;
+                transform: rotate(-1deg);
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+              "
+            >
+              <img
+                src="speakers/signal-work3.jpeg"
+                alt="Workshop Placeholder"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  transition: transform 0.3s ease;
+                "
+              />
+              <div
+                style="
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  background: linear-gradient(transparent, rgba(0,0,0,0.9));
+                  padding: 30px 20px 20px 20px;
+                  transform: translateY(100%);
+                  transition: transform 0.3s ease;
+                "
+                class="workshop-overlay"
+              >
+                <h3
+                  class="action-label"
+                  style="
+                    font-size: 1.5rem;
+                    margin-bottom: 10px;
+                    color: var(--primary-blue);
+                  "
+                >
+                  WORKSHOP PLACEHOLDER A
+                </h3>
+                <p
+                  style="
+                    font-weight: 600;
+                    line-height: 1.5;
+                    margin: 0;
+                    color: #fff;
+                  "
+                >
+                  Sample content goes here. You can replace this with the final
+                  workshop description later.
+                </p>
+              </div>
+            </div>
+
+            <!-- Workshop panel: placeholder content (to be updated) -->
+            <div
+              class="comic-panel"
+              style="
+                background: var(--primary-red);
+                color: white;
+                padding: 0;
+                transform: rotate(2deg);
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+              "
+            >
+              <img
+                src="speakers/signal-work4.jpeg"
+                alt="Workshop Placeholder"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  transition: transform 0.3s ease;
+                "
+              />
+              <div
+                style="
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  background: linear-gradient(transparent, rgba(0,0,0,0.9));
+                  padding: 30px 20px 20px 20px;
+                  transform: translateY(100%);
+                  transition: transform 0.3s ease;
+                "
+                class="workshop-overlay"
+              >
+                <h3
+                  class="action-label"
+                  style="
+                    font-size: 1.5rem;
+                    margin-bottom: 10px;
+                    color: var(--primary-yellow);
+                  "
+                >
+                  WORKSHOP PLACEHOLDER B
+                </h3>
+                <p
+                  style="
+                    font-weight: 600;
+                    line-height: 1.5;
+                    margin: 0;
+                    color: white;
+                  "
+                >
+                  Sample content goes here. Details and outcomes can be added
+                  when you share the final copy.
+                </p>
+              </div>
+            </div>
+
+            <!-- Workshop panel: placeholder content (to be updated) -->
+            <div
+              class="comic-panel"
+              style="
+                background: var(--primary-blue);
+                color: white;
+                padding: 0;
+                transform: rotate(-1.5deg);
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+              "
+            >
+              <img
+                src="speakers/signal-work5.jpeg"
+                alt="Workshop Placeholder"
+                style="
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                  transition: transform 0.3s ease;
+                "
+              />
+              <div
+                style="
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  background: linear-gradient(transparent, rgba(0,0,0,0.9));
+                  padding: 30px 20px 20px 20px;
+                  transform: translateY(100%);
+                  transition: transform 0.3s ease;
+                "
+                class="workshop-overlay"
+              >
+                <h3
+                  class="action-label"
+                  style="
+                    font-size: 1.5rem;
+                    margin-bottom: 10px;
+                    color: var(--primary-yellow);
+                  "
+                >
+                  WORKSHOP PLACEHOLDER C
+                </h3>
+                <p
+                  style="
+                    font-weight: 600;
+                    line-height: 1.5;
+                    margin: 0;
+                    color: white;
+                  "
+                >
+                  Sample content goes here. Swap this copy with the final
+                  description when it is ready.
                 </p>
               </div>
             </div>

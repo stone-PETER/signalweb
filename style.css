@@ -233,9 +233,34 @@ nav {
   padding: 40px;
   color: var(--text-black);
   position: relative;
-  margin: 40px 0;
+  margin: 40px auto;
   max-width: 900px;
+  width: 100%;
   transform: rotate(1deg);
+}
+
+.comic-panel::before {
+  content: "SIGNAL 4.0";
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  background: var(--primary-red);
+  color: white;
+  font-family: "Bangers", cursive;
+  padding: 5px 20px;
+  border: 3px solid #000;
+  transform: rotate(-3deg);
+  font-size: 1.5rem;
+}
+
+.comic-panel img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+  border: 3px solid #000;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 /* Speakers Section */
@@ -776,7 +801,15 @@ footer {
 
   .comic-panel {
     padding: 20px;
-    margin: 20px 10px;
+    margin: 20px auto;
+    width: calc(100% - 40px);
+  }
+
+  .comic-panel::before {
+    font-size: 1rem;
+    top: -15px;
+    left: 10px;
+    padding: 3px 15px;
   }
 
   .speakers-grid {
