@@ -769,6 +769,235 @@
         </div> -->
       </section>
 
+      <!-- Schedule Section -->
+      <section id="schedule" style="margin: 80px 0; position: relative;">
+        <div class="container">
+          <h2
+            class="section-title"
+            style="
+              color: var(--primary-yellow);
+              text-align: center;
+              margin-bottom: 40px;
+            "
+          >
+            ACTION SCHEDULE
+          </h2>
+
+          <!-- Schedule Tab Buttons -->
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              gap: 15px;
+              margin-bottom: 30px;
+              flex-wrap: wrap;
+            "
+          >
+            <button
+              class="schedule-tab active"
+              onclick="showSchedule('day1')"
+              style="
+                background: var(--primary-red);
+                color: white;
+                border: 3px solid #000;
+                padding: 15px 30px;
+                font-family: 'Luckiest Guy', cursive;
+                font-size: 1.2rem;
+                cursor: pointer;
+                transition: transform 0.2s;
+              "
+            >
+              DAY 1 - FEB 20
+            </button>
+            <button
+              class="schedule-tab"
+              onclick="showSchedule('day2')"
+              style="
+                background: var(--primary-blue);
+                color: white;
+                border: 3px solid #000;
+                padding: 15px 30px;
+                font-family: 'Luckiest Guy', cursive;
+                font-size: 1.2rem;
+                cursor: pointer;
+                transition: transform 0.2s;
+              "
+            >
+              DAY 2 - FEB 21
+            </button>
+            <button
+              class="schedule-tab"
+              onclick="showSchedule('day3')"
+              style="
+                background: var(--primary-yellow);
+                color: #000;
+                border: 3px solid #000;
+                padding: 15px 30px;
+                font-family: 'Luckiest Guy', cursive;
+                font-size: 1.2rem;
+                cursor: pointer;
+                transition: transform 0.2s;
+              "
+            >
+              DAY 3 - FEB 22
+            </button>
+          </div>
+
+          <!-- Day 1 Schedule -->
+          <div
+            id="day1"
+            class="schedule-content comic-panel"
+            style="
+              background: var(--primary-red);
+              color: white;
+              padding: 30px;
+              max-width: 900px;
+              margin: 0 auto;
+            "
+          >
+            <h3
+              class="action-label"
+              style="
+                font-size: 2rem;
+                margin-bottom: 25px;
+                text-align: center;
+                color: var(--primary-yellow);
+              "
+            >
+              🦸 THE ORIGIN - DAY 1
+            </h3>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 2px dashed rgba(255,255,255,0.3);">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-yellow);">1:00 PM - 2:30 PM</div>
+              <div style="flex: 1; font-weight: 700;">Registration</div>
+            </div>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 2px dashed rgba(255,255,255,0.3);">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-yellow);">3:00 PM - 4:00 PM</div>
+              <div style="flex: 1; font-weight: 700;">Program Introduction</div>
+            </div>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 2px dashed rgba(255,255,255,0.3);">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-yellow);">4:00 PM - 5:00 PM</div>
+              <div style="flex: 1; font-weight: 700;">Parallel talk Sessions</div>
+            </div>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 2px dashed rgba(255,255,255,0.3);">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-yellow);">5:00 PM - 6:30 PM</div>
+              <div style="flex: 1; font-weight: 700;">Murder Mystery</div>
+            </div>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 2px dashed rgba(255,255,255,0.3);">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-yellow);">6:30 PM - 8:00 PM</div>
+              <div style="flex: 1; font-weight: 700;">Iftar Party</div>
+            </div>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0;">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-yellow);">8:00 PM - 9:30 PM</div>
+              <div style="flex: 1; font-weight: 700;">Cultural Trivia</div>
+            </div>
+          </div>
+
+          <!-- Day 2 Schedule -->
+          <div
+            id="day2"
+            class="schedule-content comic-panel"
+            style="
+              background: var(--primary-blue);
+              color: white;
+              padding: 30px;
+              max-width: 900px;
+              margin: 0 auto;
+              display: none;
+            "
+          >
+            <h3
+              class="action-label"
+              style="
+                font-size: 2rem;
+                margin-bottom: 25px;
+                text-align: center;
+                color: var(--primary-yellow);
+              "
+            >
+              ⚡ THE BATTLE - DAY 2
+            </h3>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 2px dashed rgba(255,255,255,0.3);">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-yellow);">8:00 AM - 9:00 AM</div>
+              <div style="flex: 1; font-weight: 700;">Breakfast</div>
+            </div>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 2px dashed rgba(255,255,255,0.3);">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-yellow);">9:00 AM - 11:30 AM</div>
+              <div style="flex: 1; font-weight: 700;">Technical Workshops Phase I</div>
+            </div>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 2px dashed rgba(255,255,255,0.3);">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-yellow);">11:30 AM - 12:30 PM</div>
+              <div style="flex: 1; font-weight: 700;">Inauguration</div>
+            </div>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 2px dashed rgba(255,255,255,0.3);">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-yellow);">12:45 PM - 1:30 PM</div>
+              <div style="flex: 1; font-weight: 700;">Lunch</div>
+            </div>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 2px dashed rgba(255,255,255,0.3);">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-yellow);">1:30 PM - 5:00 PM</div>
+              <div style="flex: 1; font-weight: 700;">Technical Workshop Phase II</div>
+            </div>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 2px dashed rgba(255,255,255,0.3);">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-yellow);">5:00 PM - 5:15 PM</div>
+              <div style="flex: 1; font-weight: 700;">Tea-Snacks / Drone Expo</div>
+            </div>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 2px dashed rgba(255,255,255,0.3);">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-yellow);">5:15 PM - 7:00 PM</div>
+              <div style="flex: 1; font-weight: 700;">Ice Off</div>
+            </div>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 2px dashed rgba(255,255,255,0.3);">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-yellow);">7:00 PM - 8:30 PM</div>
+              <div style="flex: 1; font-weight: 700;">Gala Dinner</div>
+            </div>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0;">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-yellow);">8:30 PM - 9:30 PM</div>
+              <div style="flex: 1; font-weight: 700;">Pro Show</div>
+            </div>
+          </div>
+
+          <!-- Day 3 Schedule -->
+          <div
+            id="day3"
+            class="schedule-content comic-panel"
+            style="
+              background: var(--primary-yellow);
+              color: #000;
+              padding: 30px;
+              max-width: 900px;
+              margin: 0 auto;
+              display: none;
+            "
+          >
+            <h3
+              class="action-label"
+              style="
+                font-size: 2rem;
+                margin-bottom: 25px;
+                text-align: center;
+                color: var(--primary-red);
+              "
+            >
+              🏆 THE VICTORY - DAY 3
+            </h3>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 2px dashed rgba(0,0,0,0.3);">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-red);">8:00 AM - 9:00 AM</div>
+              <div style="flex: 1; font-weight: 700;">Breakfast</div>
+            </div>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 2px dashed rgba(0,0,0,0.3);">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-red);">9:00 AM - 12:00 PM</div>
+              <div style="flex: 1; font-weight: 700;">Anandham - Life Coaching Session</div>
+            </div>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0; border-bottom: 2px dashed rgba(0,0,0,0.3);">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-red);">1:00 PM - 2:00 PM</div>
+              <div style="flex: 1; font-weight: 700;">Lunch</div>
+            </div>
+            <div class="schedule-row" style="display: flex; align-items: center; padding: 15px 0;">
+              <div style="min-width: 120px; font-family: 'Luckiest Guy', cursive; color: var(--primary-red);">2:00 PM - 3:00 PM</div>
+              <div style="flex: 1; font-weight: 700;">Closing Ceremony</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="hero" id="register">
         <div
           class="comic-panel"
