@@ -36,6 +36,13 @@ const DEFAULT_SPEAKERS = [
     bio: "Technology entrepreneur and innovation leader",
     linkedin: "https://www.linkedin.com/in/asif-saif-764aa42a4",
   },
+  {
+    name: "Abhinav Rajeev",
+    image: "Abhinav.jpeg",
+    role: "Building Bumblebee Instruments ",
+    bio: "Building Bumblebee Instruments",
+    linkedin: "https://www.linkedin.com/in/abhinavr212",
+  },
 ];
 
 // LocalStorage Management
