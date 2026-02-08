@@ -914,3 +914,65 @@ footer {
     max-width: 350px;
   }
 }
+
+/* Workshop Swiper Styles */
+.workshop-swiper .swiper-slide {
+  width: 320px;
+  height: auto;
+}
+
+.workshop-swiper .swiper-slide .comic-panel {
+  width: 100%;
+  margin: 0;
+}
+
+.workshop-swiper .swiper-pagination-bullet {
+  background: var(--primary-yellow);
+  opacity: 0.5;
+}
+
+.workshop-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--primary-yellow);
+}
+
+/* Swiper Navigation Buttons */
+.workshop-swiper .swiper-button-prev,
+.workshop-swiper .swiper-button-next {
+  color: var(--primary-yellow);
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid var(--primary-yellow);
+  transition: all 0.3s ease;
+}
+
+.workshop-swiper .swiper-button-prev:after,
+.workshop-swiper .swiper-button-next:after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.workshop-swiper .swiper-button-prev:hover,
+.workshop-swiper .swiper-button-next:hover {
+  background: var(--primary-yellow);
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  .workshop-swiper .swiper-slide {
+    width: 280px;
+  }
+
+  .workshop-swiper .swiper-button-prev,
+  .workshop-swiper .swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .workshop-swiper .swiper-button-prev:after,
+  .workshop-swiper .swiper-button-next:after {
+    font-size: 16px;
+  }
+}

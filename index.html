@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script src="data.js"></script>
   </head>
 
@@ -675,16 +679,11 @@
             WORKSHOP UPDATES
           </h2>
 
-          <div
-            style="
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-              gap: 40px;
-              max-width: 1000px;
-              margin: 0 auto;
-            "
-          >
-            <!-- Intro to Computer Vision Workshop -->
+          <!-- Swiper Container -->
+          <div class="swiper workshop-swiper" style="max-width: 1000px; margin: 0 auto; padding: 20px 0 50px;">
+            <div class="swiper-wrapper">
+              <!-- Intro to Computer Vision Workshop -->
+              <div class="swiper-slide" style="width: auto;">
             <div
               class="comic-panel"
               style="
@@ -738,8 +737,10 @@
                 </p>
               </div>
             </div>
+              </div>
 
-            <!-- Drone Expo Workshop -->
+              <!-- Drone Expo Workshop -->
+              <div class="swiper-slide" style="width: auto;">
             <div
               class="comic-panel"
               style="
@@ -793,8 +794,10 @@
                 </p>
               </div>
             </div>
+              </div>
 
-            <!-- Workshop panel: placeholder content (to be updated) -->
+              <!-- Workshop panel: placeholder content (to be updated) -->
+              <div class="swiper-slide" style="width: auto;">
             <div
               class="comic-panel"
               style="
@@ -853,8 +856,10 @@
                 </p>
               </div>
             </div>
+              </div>
 
-            <!-- Workshop panel: placeholder content (to be updated) -->
+              <!-- Workshop panel: placeholder content (to be updated) -->
+              <div class="swiper-slide" style="width: auto;">
             <div
               class="comic-panel"
               style="
@@ -913,8 +918,10 @@
                 </p>
               </div>
             </div>
+              </div>
 
-            <!-- Workshop panel: placeholder content (to be updated) -->
+              <!-- Workshop panel: placeholder content (to be updated) -->
+              <div class="swiper-slide" style="width: auto;">
             <div
               class="comic-panel"
               style="
@@ -973,6 +980,13 @@
                 </p>
               </div>
             </div>
+              </div>
+            </div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Swiper Navigation Buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
 
           <!-- Workshop Features -->
@@ -1389,6 +1403,49 @@
           setTimeout(() => (modal.style.display = "none"), 400);
         }
       };
+    </script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // Initialize Workshop Swiper
+      const workshopSwiper = new Swiper('.workshop-swiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        centeredSlides: false,
+        grabCursor: true,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            centeredSlides: true,
+          },
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 25,
+            centeredSlides: false,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: false,
+          }
+        }
+      });
     </script>
   </body>
 </html>
