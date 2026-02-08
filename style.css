@@ -239,7 +239,7 @@ nav {
   transform: rotate(1deg);
 }
 
-.comic-panel::before {
+/* .comic-panel::before {
   content: "SIGNAL 4.0";
   position: absolute;
   top: -20px;
@@ -251,7 +251,7 @@ nav {
   border: 3px solid #000;
   transform: rotate(-3deg);
   font-size: 1.5rem;
-}
+} */
 
 .comic-panel img {
   width: 100%;
@@ -891,5 +891,23 @@ footer {
 
   nav {
     width: 85%;
+  }
+}
+
+/* Pricing Grid - Row on larger screens */
+.pricing-grid {
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .pricing-grid {
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .pricing-grid > .comic-panel {
+    flex: 1;
+    max-width: 350px;
   }
 }
