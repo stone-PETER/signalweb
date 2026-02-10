@@ -43,6 +43,20 @@ const DEFAULT_SPEAKERS = [
     bio: "Building Bumblebee Instruments",
     linkedin: "https://www.linkedin.com/in/abhinavr212",
   },
+  {
+    name: "Dr. Sinith M S",
+    image: "sinith.png",
+    role: "Assistant Professor and Head, Department of ECE",
+    bio: "GEC Wayanad",
+    linkedin: "https://in.linkedin.com/in/dr-sinith-m-s-44a48b21",
+  },
+  {
+    name: "Dr. ARUN AV",
+    image: "arunav.jpeg",
+    role: "Assistant Professor, Department of ECE",
+    bio: "T. K. M. College of Engineering",
+    linkedin: "https://www.linkedin.com/in/arun-av-798b77121/",
+  }
 ];
 
 // LocalStorage Management
