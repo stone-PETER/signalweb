@@ -975,4 +975,43 @@ footer {
   .workshop-swiper .swiper-button-next:after {
     font-size: 16px;
   }
+
+  /* Schedule Mobile Responsive Styles */
+  .schedule-content {
+    max-width: 100% !important;
+    padding: 20px !important;
+  }
+
+  .schedule-row {
+    display: grid !important;
+    grid-template-columns: 2fr 1fr !important;
+    gap: 10px !important;
+    padding: 10px 0 !important;
+    font-size: 0.85rem !important;
+  }
+
+  /* Hide columns 2, 4, and 5 (Category, End Time, Venue) on mobile */
+  .schedule-row .header-category,
+  .schedule-row .header-end,
+  .schedule-row .header-venue,
+  .schedule-row div:nth-child(2),
+  .schedule-row div:nth-child(4),
+  .schedule-row div:nth-child(5) {
+    display: none !important;
+  }
+
+  /* Adjust header for mobile - change "Event Name" to "Event / Time" */
+  .schedule-header .header-event::after {
+    content: " / Time";
+  }
+
+  .schedule-header .header-start {
+    display: none !important;
+  }
+
+  /* Adjust schedule title for mobile */
+  .action-label {
+    font-size: 1.5rem !important;
+    margin-bottom: 20px !important;
+  }
 }
