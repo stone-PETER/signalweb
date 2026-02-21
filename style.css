@@ -1005,6 +1005,51 @@ footer {
     color: #000;
   }
 
+  /* Talk Sessions Swiper Styles */
+  .talk-sessions-swiper .swiper-slide {
+    width: 320px;
+    height: auto;
+  }
+
+  .talk-sessions-swiper .swiper-slide .comic-panel {
+    width: 100%;
+    margin: 0;
+  }
+
+  .talk-sessions-swiper .swiper-pagination-bullet {
+    background: var(--primary-yellow);
+    opacity: 0.5;
+  }
+
+  .talk-sessions-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--primary-yellow);
+  }
+
+  /* Talk Sessions Swiper Navigation Buttons */
+  .talk-sessions-swiper .swiper-button-prev,
+  .talk-sessions-swiper .swiper-button-next {
+    color: var(--primary-yellow);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-yellow);
+    transition: all 0.3s ease;
+  }
+
+  .talk-sessions-swiper .swiper-button-prev:after,
+  .talk-sessions-swiper .swiper-button-next:after {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .talk-sessions-swiper .swiper-button-prev:hover,
+  .talk-sessions-swiper .swiper-button-next:hover {
+    background: var(--primary-yellow);
+    color: #000;
+  }
+
   .workshop-swiper .swiper-button-prev,
   .workshop-swiper .swiper-button-next {
     width: 40px;
@@ -1028,6 +1073,21 @@ footer {
 
   .special-events-swiper .swiper-button-prev:after,
   .special-events-swiper .swiper-button-next:after {
+    font-size: 16px;
+  }
+
+  .talk-sessions-swiper .swiper-slide {
+    width: 280px;
+  }
+
+  .talk-sessions-swiper .swiper-button-prev,
+  .talk-sessions-swiper .swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .talk-sessions-swiper .swiper-button-prev:after,
+  .talk-sessions-swiper .swiper-button-next:after {
     font-size: 16px;
   }
 
