@@ -960,9 +960,49 @@ footer {
   color: #000;
 }
 
-@media (max-width: 600px) {
-  .workshop-swiper .swiper-slide {
-    width: 280px;
+  /* Special Events Swiper Styles */
+  .special-events-swiper .swiper-slide {
+    width: 320px;
+    height: auto;
+  }
+
+  .special-events-swiper .swiper-slide .comic-panel {
+    width: 100%;
+    margin: 0;
+  }
+
+  .special-events-swiper .swiper-pagination-bullet {
+    background: var(--primary-yellow);
+    opacity: 0.5;
+  }
+
+  .special-events-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--primary-yellow);
+  }
+
+  /* Special Events Swiper Navigation Buttons */
+  .special-events-swiper .swiper-button-prev,
+  .special-events-swiper .swiper-button-next {
+    color: var(--primary-yellow);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-yellow);
+    transition: all 0.3s ease;
+  }
+
+  .special-events-swiper .swiper-button-prev:after,
+  .special-events-swiper .swiper-button-next:after {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .special-events-swiper .swiper-button-prev:hover,
+  .special-events-swiper .swiper-button-next:hover {
+    background: var(--primary-yellow);
+    color: #000;
   }
 
   .workshop-swiper .swiper-button-prev,
@@ -973,6 +1013,21 @@ footer {
 
   .workshop-swiper .swiper-button-prev:after,
   .workshop-swiper .swiper-button-next:after {
+    font-size: 16px;
+  }
+
+  .special-events-swiper .swiper-slide {
+    width: 280px;
+  }
+
+  .special-events-swiper .swiper-button-prev,
+  .special-events-swiper .swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .special-events-swiper .swiper-button-prev:after,
+  .special-events-swiper .swiper-button-next:after {
     font-size: 16px;
   }
 
